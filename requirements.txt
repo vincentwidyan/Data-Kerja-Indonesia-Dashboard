@@ -4,3 +4,4 @@ matplotlib
 st_aggrid
 streamlit-aggrid==0.0.4
 streamlit-card
+streamlit-extras
