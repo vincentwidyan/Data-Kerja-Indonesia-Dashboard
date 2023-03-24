@@ -3,9 +3,9 @@ import pandas as pd
 import plotly.express as px
 from datetime import datetime
 from datetime import timedelta
-from st_aggrid import AgGrid
+#from st_aggrid import AgGrid
 import statistics
-from streamlit_card import card
+#from streamlit_card import card
 from streamlit_extras import dataframe_explorer
 
 
