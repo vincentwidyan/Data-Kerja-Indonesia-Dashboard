@@ -4,3 +4,4 @@ matplotlib
 streamlit-aggrid
 streamlit-card
 streamlit-extras
+openpyxl
