@@ -1,5 +1,3 @@
 pandas
-plotly
-st_aggrid
-datetime
-pandas
+plotly.express
+matplotlib
