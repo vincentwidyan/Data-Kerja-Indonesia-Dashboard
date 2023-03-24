@@ -1,7 +1,6 @@
 pandas
 plotly.express
 matplotlib
-st_aggrid
-streamlit-aggrid==0.0.4
+streamlit-aggrid
 streamlit-card
 streamlit-extras

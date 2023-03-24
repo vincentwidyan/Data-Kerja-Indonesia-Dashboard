@@ -3,9 +3,9 @@ import pandas as pd
 import plotly.express as px
 from datetime import datetime
 from datetime import timedelta
-#from st_aggrid import AgGrid
+from st_aggrid import AgGrid
 import statistics
-#from streamlit_card import card
+from streamlit_card import card
 from streamlit_extras import dataframe_explorer
 
 
@@ -177,6 +177,6 @@ graph_2.plotly_chart(fig, use_container_width=True)
 
 st.subheader('Detail {} Jobs'.format(keyword))
 data_detail = data_job_relevant[['Keyword','Source','JobTitle','Company','JobLocation','DatePublish','Salary','JobUrl']]
-filtered_df = dataframe_explorer(data_detail)
-st.dataframe(filtered_df,use_container_width=True)
-#AgGrid(data_detail)
+#filtered_df = dataframe_explorer(data_detail)
+#st.dataframe(filtered_df,use_container_width=True)
+AgGrid(data_detail)
