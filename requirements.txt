@@ -1,3 +1,6 @@
 pandas
 plotly.express
 matplotlib
+st_aggrid
+AgGrid
+card
