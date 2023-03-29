@@ -16,6 +16,7 @@ max_date = max(data['DatePublish'])
 min_date = min(data['DatePublish'])
 
 # markdown
+st.sidebar.header("Data Kerja Indonesia")
 st.title('Data Kerja Indonesia')
 
 # Define the sidebar
@@ -234,3 +235,5 @@ col2.plotly_chart(fig, use_container_width=True)
 grouped_jobloc = data_job_relevant.pivot_table(index='JobLocation',values='JobTitle',aggfunc='count').sort_values(by='JobTitle',ascending=False).head(10)
 
 annotated_text("Data grafik di atas merupakan data persebaran jumlah lowongan kerja",("{}".format(keyword),"text"),"di Indonesia. Pada saat ini, lowongan kerja",("{}".format(keyword),"text"), "terbanyak berada di",("{}".format(grouped_jobloc.index[0]),"text"),"sebanyak",("{}".format(grouped_jobloc.values[0][0]),"int"),"Di urutan selanjutnya, lowongan kerja tersebut paling banyak berada di",("{}".format(grouped_jobloc.index[1]),"text"),",",("{}".format(grouped_jobloc.index[2]),"text"),", dan",("{}".format(grouped_jobloc.index[3]),"text"),"sebanyak",("{}".format(grouped_jobloc.values[1][0]),"int"),",",("{}".format(grouped_jobloc.values[2][0]),"int"),", dan",("{}".format(grouped_jobloc.values[3][0]),"int"),"Data ini dapat menjadi acuan para pencari kerja untuk melihat daerah terbaik untuk lowongan kerja",("{}".format(keyword),"text"))
+
+location = ['Yogyakarta','Bali','Bandung','Jawa Tengah','Jawa Timur','Banten','Bantul','Batam','Bekasi','Bogor','Denpasar','Kalimantan','Makassar','Malang','Medan','Palembang','Pekanbaru','Semarang','Sidoarjo']
